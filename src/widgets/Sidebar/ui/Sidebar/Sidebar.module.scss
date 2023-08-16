@@ -8,12 +8,14 @@
 }
 
 .swithers {
+    width: 100%;
     position: absolute;
     bottom: 20px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .collapsed {
     width: var(--sidebar-width-collapsed);
 }
+
