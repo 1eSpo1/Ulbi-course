@@ -6,6 +6,11 @@
     "editor.codeActionsOnSave": {
             "source.fixAll.eslint": true
         },
-    "eslint.validate": ["javascript"]
+    "eslint.validate": ["javascript"],
+
+    "scss.validate": false,
+    "css.validate": false,
+    "less.validate": false,
+
     
 }

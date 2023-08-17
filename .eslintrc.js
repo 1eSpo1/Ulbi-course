@@ -4,8 +4,8 @@ module.exports = {
         es2021: true,
     },
     extends: [
-        "standard-with-typescript",
-        "plugin:react/recommended"
+        'plugin:react/recommended',
+        'airbnb',
     ],
     parser: '@typescript-eslint/parser',
     parserOptions: {
@@ -14,7 +14,6 @@ module.exports = {
         },
         ecmaVersion: 'latest',
         sourceType: 'module',
-        project: ['tsconfig.json'],
     },
     plugins: [
         'react',
@@ -36,9 +35,10 @@ module.exports = {
         'import/extensions': 'off',
         'import/no-extraneous-dependencies': 'off',
         'no-underscore-dangle': 'off',
+        'no-return-await': 'off',
+        'max-len': [error, {ignoreComments: true}],
     },
     globals: {
         __IS_DEV__: true,
     },
 };
-

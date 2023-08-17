@@ -1,4 +1,4 @@
 export {
-    AbouPageAsync as AboutPage
+    AbouPageAsync as AboutPage,
 } from
-  './ui/AbouPage.async'
+    './ui/AbouPage.async';

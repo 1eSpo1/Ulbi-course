@@ -1,31 +1,31 @@
-import React from 'react'
-import { classNames } from 'shared/lib/classNames'
-import cls from './LangSwither.module.scss'
-import { useTranslation } from 'react-i18next'
-import Button, { ThemeButton } from 'shared/ui/Button/Button'
+import React from 'react';
+import { classNames } from 'shared/lib/classNames';
+import { useTranslation } from 'react-i18next';
+import Button, { ThemeButton } from 'shared/ui/Button/Button';
+import cls from './LangSwither.module.scss';
 
 interface LangSwitherProps {
   className?: string
 }
 
 export const LangSwither = ({ className }: LangSwitherProps) => {
-  const { t, i18n } = useTranslation()
+    const { t, i18n } = useTranslation();
 
-  const toggle = async () => {
-    i18n.changeLanguage(i18n.language === 'ru' ? 'en' : 'ru')
-  }
+    const toggle = async () => {
+        i18n.changeLanguage(i18n.language === 'ru' ? 'en' : 'ru');
+    };
 
-  return (
+    return (
 
         <Button
-          className={classNames(cls.LangSwither, {}, [className])}
-          theme={ThemeButton.CLEAR}
-          onClick={toggle}
+            className={classNames(cls.LangSwither, {}, [className])}
+            theme={ThemeButton.CLEAR}
+            onClick={toggle}
         >
-          {t('Перевод')}
-      </Button>
+            {t('Перевод')}
+        </Button>
 
-  )
-}
+    );
+};
 
-export default LangSwither
+export default LangSwither;
