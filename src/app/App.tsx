@@ -1,5 +1,5 @@
 import { useTheme } from 'app/providers/ThemeProvider';
-import { Suspense } from 'react';
+import { Suspense, useEffect } from 'react';
 import { classNames } from 'shared/lib/classNames';
 import { Navbar } from 'widgets/Navbar';
 import { Sidebar } from 'widgets/Sidebar';
@@ -10,6 +10,8 @@ const Component = () => {};
 
 function App() {
     const { theme } = useTheme();
+
+
 
     return (
         <div className={classNames('app', {}, [theme])}>
