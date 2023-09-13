@@ -1,25 +1,22 @@
-import React, { useEffect, useState } from "react"
-import { classNames } from "shared/lib/classNames";
-import cls from './BugButton.module.scss'
-import Button from "shared/ui/Button/Button";
-import { useTranslation } from "react-i18next";
-
-
-
+import React, { useEffect, useState } from 'react';
+import { classNames } from 'shared/lib/classNames/classNames';
+import Button from 'shared/ui/Button/Button';
+import { useTranslation } from 'react-i18next';
+import cls from './BugButton.module.scss';
 
 export const BugButton = () => {
-    const [error, setError] = useState(false)
-    const {t} = useTranslation()
+    const [error, setError] = useState(false);
+    const { t } = useTranslation();
 
     function onThrow() {
-        setError(true)
+        setError(true);
     }
 
     useEffect(() => {
         if (error) {
-            throw new Error()
+            throw new Error();
         }
-    }, [error])
+    }, [error]);
     return (
         <Button
             onClick={onThrow}
@@ -27,6 +24,6 @@ export const BugButton = () => {
             {t('Произошла ошибка')}
         </Button>
     );
-}
+};
 
 export default BugButton;
