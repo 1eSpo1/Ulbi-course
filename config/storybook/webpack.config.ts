@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import path from 'path';
 import webpack, { RuleSetRule } from 'webpack';
 import { buildCssLoader } from '../build/loaders/buildCssLoader';
@@ -10,7 +12,7 @@ export default ({ config }: {config: webpack.Configuration}) => {
         entry: '',
         src: path.resolve(__dirname, '..', '..', 'src'),
     };
-    config.resolve.modules?.push(paths.src)
+    config.resolve.modules.push(paths.src);
     config.resolve.extensions.push('.ts', '.tsx');
 
     // eslint-disable-next-line no-param-reassign
