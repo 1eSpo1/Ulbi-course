@@ -4,7 +4,7 @@ import { ThemeSwitcher } from 'widgets/ThemeSwitcher';
 import LangSwither from 'widgets/LangSwitcher/LangSwither';
 import { useTranslation } from 'react-i18next';
 import cls from './Sidebar.module.scss';
-import Button from '../../../../shared/ui/Button/Button';
+import Button, { ButtonSize, ButtonTheme } from '../../../../shared/ui/Button/Button';
 
 interface SidebarProps {
     className?: string
@@ -26,8 +26,12 @@ export const Sidebar = ({ className }: SidebarProps) => {
             <Button
                 data-testid="sidebar-toggle"
                 onClick={onToggle}
+                className={cls.collapsedBtn}
+                theme={ButtonTheme.BACKGROUND_INVERTED}
+                square
+                size={ButtonSize.XL}
             >
-                {t('Переключить')}
+                {collapsed ? '>' : '<'}
             </Button>
             <div className={cls.swithers}>
                 <ThemeSwitcher />
