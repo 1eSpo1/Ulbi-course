@@ -16,7 +16,6 @@
     "test:ui:ok": "npx loki approve",
     "storybook": "start-storybook -p 6006 -c ./config/storybook",
     "storybook:build": "build-storybook -p 6006 -c ./config/storybook"
-
   },
   "keywords": [],
   "author": "",
@@ -75,8 +74,8 @@
     "style-loader": "^3.3.1",
     "stylelint": "^14.5.3",
     "stylelint-config-standard-scss": "^3.0.0",
-    "ts-loader": "^9.2.6",
-    "ts-node": "^10.5.0",
+    "ts-loader": "^9.5.0",
+    "ts-node": "^10.9.1",
     "typescript": "^4.5.5",
     "webpack": "^5.69.1",
     "webpack-bundle-analyzer": "^4.5.0",
@@ -84,16 +83,12 @@
     "webpack-dev-server": "^4.7.4"
   },
   "dependencies": {
-    "@reduxjs/toolkit": "^1.8.0",
-    "axios": "^0.26.1",
-    "concurrently": "^7.0.0",
     "i18next": "^21.6.11",
     "i18next-browser-languagedetector": "^6.1.3",
     "i18next-http-backend": "^1.3.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-i18next": "^11.15.5",
-    "react-redux": "^7.2.6",
     "react-router-dom": "^6.2.1"
   },
   "loki": {
