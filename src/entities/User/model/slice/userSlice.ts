@@ -5,7 +5,7 @@ import { UserSchema, User } from '../types/userSchema';
 const initialState: UserSchema = {};
 
 const userSlice = createSlice({
-    name: 'counter',
+    name: 'user',
     initialState,
     reducers: {
         setAuthData(state, action: PayloadAction<User>) {
