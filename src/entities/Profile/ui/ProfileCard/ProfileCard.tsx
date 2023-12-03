@@ -7,7 +7,10 @@ import { Input } from 'shared/ui/Input/Input';
 import Loader from 'shared/ui/Loader/Loader';
 import { Avatar } from 'shared/ui/Avatar/Avatar';
 import { Select } from 'shared/ui/Select/Select';
-import { Currency } from 'shared/const/common';
+import { Currency } from 'entities/Currency/model/types/currency';
+import { CurrencySelect } from 'entities/Currency';
+import { Country } from 'entities/Country/model/types/Country';
+import { CountrySelect } from 'entities/Country';
 import cls from './ProfileCard.module.scss';
 import { Profile } from '../../model/types/profile';
 
@@ -23,6 +26,8 @@ interface ProfileCardProps {
     onChangeCity?: (value?: string) => void;
     onChangeUsername?: (value?: string) => void;
     onChangeAvatar?: (value?: string) => void;
+    onChangeCurrency?: (currency: Currency) => void;
+    onChangeCountry?: (country: Country) => void;
 
 }
 
@@ -38,6 +43,8 @@ export const ProfileCard = (props: ProfileCardProps) => {
         onChangeCity,
         onChangeAvatar,
         onChangeUsername,
+        onChangeCountry,
+        onChangeCurrency,
         readonly,
     } = props;
     const { t } = useTranslation();
@@ -118,14 +125,17 @@ export const ProfileCard = (props: ProfileCardProps) => {
                     onChange={onChangeAvatar}
                     readonly={readonly}
                 />
-                <Select
-                    /* eslint-disable-next-line i18next/no-literal-string */
-                    label="Укажите валюту"
-                    options={[
-                        { value: Currency.RUB, content: Currency.RUB },
-                        { value: Currency.EUR, content: Currency.EUR },
-                        { value: Currency.USD, content: Currency.USD },
-                    ]}
+                <CurrencySelect
+                    className={cls.input}
+                    value={data?.currency}
+                    onChange={onChangeCurrency}
+                    readonly={readonly}
+                />
+                <CountrySelect
+                    className={cls.input}
+                    value={data?.country}
+                    onChange={onChangeCountry}
+                    readonly={readonly}
                 />
             </div>
         </div>
