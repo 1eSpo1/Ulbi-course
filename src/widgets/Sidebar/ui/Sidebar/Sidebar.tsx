@@ -3,7 +3,9 @@ import { classNames } from 'shared/lib/classNames/classNames';
 import { ThemeSwitcher } from 'widgets/ThemeSwitcher';
 import LangSwitcher from 'widgets/LangSwitcher/LangSwither';
 import { useTranslation } from 'react-i18next';
-import { SidebarItemsList } from '../../model/items';
+import { useSelector } from 'react-redux';
+import { getSidebarItems } from '../../model/selectors/getSidebarItems';
+
 import { SidebarItem } from '../../ui/SidebarItem/SidebarItem';
 import cls from './Sidebar.module.scss';
 import Button, { ButtonSize, ButtonTheme } from '../../../../shared/ui/Button/Button';
@@ -15,13 +17,15 @@ interface SidebarProps {
 export const Sidebar = memo(({ className }: SidebarProps) => {
     const [collapsed, setCollapsed] = useState(false);
     const { t } = useTranslation();
+
+    const sidebarItemsList = useSelector(getSidebarItems);
     const onToggle = () => {
         setCollapsed((prev) => !prev);
         console.log('на меня нажали', collapsed);
     };
 
     const itemsList = useMemo(
-        () => SidebarItemsList.map((item) => (
+        () => sidebarItemsList.map((item) => (
             <SidebarItem
                 item={item}
                 collapsed={collapsed}
@@ -29,7 +33,7 @@ export const Sidebar = memo(({ className }: SidebarProps) => {
 
             />
         )),
-        [collapsed],
+        [collapsed, sidebarItemsList],
     );
 
     return (
