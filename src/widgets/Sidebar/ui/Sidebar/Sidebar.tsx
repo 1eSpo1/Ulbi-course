@@ -8,7 +8,7 @@ import { getSidebarItems } from '../../model/selectors/getSidebarItems';
 
 import { SidebarItem } from '../../ui/SidebarItem/SidebarItem';
 import cls from './Sidebar.module.scss';
-import Button, { ButtonSize, ButtonTheme } from '../../../../shared/ui/Button/Button';
+import { Button, ButtonSize, ButtonTheme } from '../../../../shared/ui/Button/Button';
 
 interface SidebarProps {
     className?: string
@@ -37,7 +37,7 @@ export const Sidebar = memo(({ className }: SidebarProps) => {
     );
 
     return (
-        <div
+        <menu
             data-testid="sidebar"
             className={classNames(cls.Sidebar, { [cls.collapsed]: collapsed }, [className])}
         >
@@ -59,7 +59,7 @@ export const Sidebar = memo(({ className }: SidebarProps) => {
                 <ThemeSwitcher />
                 <LangSwitcher className={cls.lang} />
             </div>
-        </div>
+        </menu>
     );
 });
 
