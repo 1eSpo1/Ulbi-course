@@ -17,8 +17,8 @@
       "title": "Javascript news",
       "subtitle": "Что нового в JS за 2022 год?",
       "img": "https://teknotower.com/wp-content/uploads/2020/11/js.png",
-      "views": 1022,
-      "createdAt": "26.02.2022",
+      "views": 1029992,
+      "createdAt": "26.02.2027",
       "userId": "1",
       "type": [
         "IT"
@@ -89,7 +89,7 @@
       "title": "Python news",
       "subtitle": "Что нового в JS за 2022 год?",
       "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png",
-      "views": 1022,
+      "views": 1023,
       "createdAt": "26.02.2022",
       "userId": "1",
       "type": [
@@ -110,7 +110,7 @@
     },
     {
       "id": "3",
-      "title": "Kotlin news",
+      "title": "Kotlin newsblblblbl",
       "subtitle": "Что нового в JS за 2022 год?",
       "img": "https://logowik.com/content/uploads/images/kotlin.jpg",
       "views": 1022,
@@ -230,7 +230,7 @@
     },
     {
       "id": "8",
-      "title": "Python news",
+      "title": "Python news123123",
       "subtitle": "Что нового в JS за 2022 год?",
       "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png",
       "views": 1022,
@@ -353,7 +353,7 @@
       "title": "Kotlin news",
       "subtitle": "Что нового в JS за 2022 год?",
       "img": "https://logowik.com/content/uploads/images/kotlin.jpg",
-      "views": 1022,
+      "views": 102345,
       "createdAt": "26.02.2022",
       "userId": "1",
       "type": [
@@ -377,7 +377,7 @@
       "title": "Python news",
       "subtitle": "Что нового в JS за 2022 год?",
       "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png",
-      "views": 1022,
+      "views": 1,
       "createdAt": "26.02.2022",
       "userId": "1",
       "type": [
@@ -401,8 +401,8 @@
       "title": "Kotlin news",
       "subtitle": "Что нового в JS за 2022 год?",
       "img": "https://logowik.com/content/uploads/images/kotlin.jpg",
-      "views": 1022,
-      "createdAt": "26.02.2022",
+      "views": 320,
+      "createdAt": "26.02.2002",
       "userId": "1",
       "type": [
         "IT"
@@ -422,11 +422,11 @@
     },
     {
       "id": "16",
-      "title": "Python news",
+      "title": "Python news asda",
       "subtitle": "Что нового в JS за 2022 год?",
       "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png",
       "views": 1022,
-      "createdAt": "26.02.2022",
+      "createdAt": "26.02.1922",
       "userId": "1",
       "type": [
         "IT"
@@ -446,11 +446,11 @@
     },
     {
       "id": "17",
-      "title": "Kotlin news",
+      "title": "Kotik news",
       "subtitle": "Что нового в JS за 2022 год?",
       "img": "https://logowik.com/content/uploads/images/kotlin.jpg",
       "views": 1022,
-      "createdAt": "26.02.2022",
+      "createdAt": "26.02.122",
       "userId": "1",
       "type": [
         "IT"
